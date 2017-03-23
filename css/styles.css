@@ -27,6 +27,7 @@ li{
 
 .main-logo {
     float: left;
+    font-size:1.2rem;
 }
 
 header {
@@ -51,8 +52,8 @@ header {
 }
 
 .user-nav ul {
- margin : 0;
- font-size : 0;
+     margin : 0;
+     font-size : 0;
 }
 
 .user-nav  li {
@@ -60,9 +61,9 @@ header {
     padding-right: 15px;
     padding-left: 15px;
     text-align: center;
-    font-size:16px;
-
+    font-size:1.2rem;
 }
+
 
 .user-nav img {
     height: 100%;
@@ -91,10 +92,9 @@ header {
 
 .sidebar-menu{
     width: 70px;
-    height: 560px;
     background-color: #fff;
     position: fixed;
-    top : 64px;
+    top : 66px;
     z-index: 999;
 
 }
@@ -177,6 +177,7 @@ header {
     min-height:100%;
     margin-left: 70px;
     padding: 30px 0 30px 30px;
+
 }
 
 .simple-news{
@@ -185,16 +186,23 @@ header {
 }
 
 .simple-news .img-bg{
-    max-width:100%;
     min-height:250px;
+}
+
+.simple-news .main-img{
+    min-height: 500px;
+}
+
+.img-bg{
+    max-width:100%;
+    height:auto;
     background-repeat: no-repeat;
     background-size:cover;
 
 }
 
 
-
-.img-bg::after {
+.simple-news .img-bg::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -209,7 +217,8 @@ header {
 
 .about-content h2 {
     margin-top: 0 ;
-    padding-top: 40px;
+    padding-top: 20px;
+    min-height: 81px;
 }
 
 
@@ -228,7 +237,7 @@ header {
      background-image: url('../images/calendar.jpg');
      position: absolute;
      top:auto;
-    left: 0;
+     left: 0;
 
 
  }
@@ -279,7 +288,7 @@ header {
     display: inline-block;
     border:2px solid #fff;
     position: absolute;
-     top:50%;
+    top:50%;
     left:50%;
     text-align: center;
     transform:translate(-50%,-50%);
@@ -294,4 +303,178 @@ header {
     color : rgb(232, 124, 105);
     background-color: #fff;
     
+}
+
+/*about page*/
+.margin-bottom{
+    margin-bottom: 40px;
+}
+
+.margin-left {
+    margin-left: 30px;
+}
+
+.about {
+    padding-right: 130px;
+    position: relative;
+
+}
+
+
+.close {
+    position: fixed;
+    width:65px;
+    height:65px;
+    border: 1px solid #ebebeb;
+    top: 94px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.close::after{
+    position: absolute;
+    top:50%;
+    right:20px;
+    left:20px;
+    content: "";
+    margin-top:-1px;
+    border: 1px solid #000;
+    transform: rotate(45deg);
+
+}
+
+.close::before{
+    position: absolute;
+    top:50%;
+    right:20px;
+    left:20px;
+    content: "";
+    margin-top:-1px;
+    border: 1px solid #000;
+    transform: rotate(-45deg);
+
+}
+
+
+.promo-photo .img-bg {
+    min-height: 560px;
+
+}
+
+.article-info{
+    min-height:100%;
+    text-align: right;
+    padding-left:60px;
+
+}
+
+.article-info p {
+    border-bottom : 1px solid #ebebeb;
+    padding-bottom:18px;
+    font-size: 1.2rem;
+    line-height: 22px;
+    font-weight: bold;
+    color: #313131;
+}
+
+.article-content h1 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    padding-right: 250px;
+}
+
+.article-content p {
+    font-size: 1.2rem;
+    margin-top: 0;
+    padding-right: 100px;
+}
+
+
+.regular-text{
+    font-weight: normal;
+    color: #585858;
+}
+
+.article-info p:nth-child(3) {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
+
+
+.share-socials{
+    margin:0;
+    padding: 0;
+    width:100%;
+}
+.share-socials li {
+    display: inline-block;
+    margin-right:3px;
+
+}
+
+.share-socials a,.share-socials span{
+    display: block;
+    height:25px;
+    width:25px;
+
+}
+
+.share-socials .vk-socials {
+    background-image: url("../images/vkontakte.png");
+    background-size: contain;
+}
+
+.share-socials .fb-socials {
+    background-image: url("../images/facebook.png");
+    background-size: contain;
+}
+
+.share-socials .ok-socials {
+    background-image: url("../images/odnoklassniki.png");
+    background-size: contain;
+}
+
+.share-socials .gplus-socials {
+    background-image: url("../images/google_plus.png");
+    background-size: contain;
+}
+
+
+.article-content {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 30px;
+}
+
+/*footer*/
+footer{
+    background-color: #1a1a1a;
+    color: white
+}
+
+.footer-content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer-content li {
+    display: inline-block;
+    margin-right:5px;
+
+}
+
+.footer-content a {
+    border: 1px solid #fff;
+    padding: 5px 7px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.footer-content ul{
+    padding: 0;
 }
