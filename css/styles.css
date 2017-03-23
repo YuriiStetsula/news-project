@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding : 0;
     padding-top: 64px;
+    font-family: 'Lato', 'Arial', sans-serif;
 }
 
 img {
@@ -177,7 +178,6 @@ header {
     min-height:100%;
     margin-left: 70px;
     padding: 30px 0 30px 30px;
-
 }
 
 .simple-news{
@@ -198,7 +198,6 @@ header {
     height:auto;
     background-repeat: no-repeat;
     background-size:cover;
-
 }
 
 
@@ -238,9 +237,7 @@ header {
      position: absolute;
      top:auto;
      left: 0;
-
-
- }
+}
 
 .about-content .comment::before {
     content: "";
@@ -250,8 +247,6 @@ header {
     position: absolute;
     top:auto;
     left: 0;
-
-
 }
 
 .about-content {
@@ -305,7 +300,8 @@ header {
     
 }
 
-/*about page*/
+/*details page*/
+
 .margin-bottom{
     margin-bottom: 40px;
 }
@@ -372,7 +368,7 @@ header {
 .article-info p {
     border-bottom : 1px solid #ebebeb;
     padding-bottom:18px;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     line-height: 22px;
     font-weight: bold;
     color: #313131;
@@ -451,7 +447,8 @@ header {
 /*footer*/
 footer{
     background-color: #1a1a1a;
-    color: white
+    color: white;
+    font-size:1.0rem;
 }
 
 .footer-content{
@@ -471,8 +468,8 @@ footer{
     padding: 5px 7px;
     color: #fff;
     display: inline-block;
-    font-size: 18px;
-    line-height: 18px;
+    font-size:1.2rem;
+    line-height: 1.2rem;
 }
 
 .footer-content ul{
