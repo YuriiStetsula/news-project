@@ -15,6 +15,10 @@
         min-height:250px;
     }
 
+    .about-content {
+        height:auto;
+    }
+
     .promo-photo .img-bg {
         min-height: 250px;
     }
